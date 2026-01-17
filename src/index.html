@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Poctivá tesařina na Vysočině. Dva mistři, dvojí specializace. Stavíme nové pergoly, zachraňujeme staré krovy." />
+    <title>Tesařství Vysočina | Nové stavby & Renovace</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="logo">TESAŘI<span class="highlight">VYSOČINA</span></div>
+      <nav>
+        <ul>
+          <li><a href="#about">O nás</a></li>
+          <li><a href="#new">Nové stavby</a></li>
+          <li><a href="#renovation">Záchrana</a></li>
+          <li><a href="#references">Reference</a></li>
+          <li><a href="#contact" class="cta-nav">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="hero">
+        <div class="split left">
+          <div class="content">
+            <h1>Nové Pergoly</h1>
+            <p>Design, čistota, relaxace.</p>
+            <a href="#new" class="btn btn-primary">Chci novou stavbu</a>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="split right">
+          <div class="content">
+            <h1>Záchrana Krovů</h1>
+            <p>Rekonstrukce, fortel, úcta.</p>
+            <a href="#renovation" class="btn btn-secondary">Potřebuji opravu</a>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <div class="center-text">
+          <p class="tagline">POCTIVÁ TESAŘINA</p>
+          <div class="line"></div>
+        </div>
+      </section>
+
+      <!-- O NÁS -->
+      <section id="about" class="container">
+        <div class="about-grid">
+          <div class="about-img">
+            <div class="placeholder-img">Fotka Tesařů</div>
+          </div>
+          <div class="about-text">
+            <h2>Dva mistři. Jedno slovo.</h2>
+            <p>Jsme Franta a Pepa. Nejsme developerská firma. Jsme ti, kdo vám zvednou telefon a druhý den přijedou se žebříkem. Garantujeme, že práci, kterou naceníme, také vlastníma rukama odvedeme.</p>
+            <p>Specializujeme se na detailní práci se dřevem, kterou velké firmy přehlížejí.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOVÉ STAVBY -->
+      <section id="new" class="section-dark">
+        <div class="container">
+          <h2 class="section-title">Nové Realizace</h2>
+          <p class="section-subtitle">Pergoly, Altány, Carporty</p>
+          
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Pergoly na míru</h3>
+              <p>Masivní i moderní konstrukce. Přesné čepování, žádné zbytečné úhelníky.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Krytá stání</h3>
+              <p>Ochrana vašeho vozu, která architektonicky ladí s domem.</p>
+            </div>
+            <div class="feature-card highlight-card">
+              <h3>3D Vizualizace</h3>
+              <p>Nekupujte zajíce v pytli. Ke každé zakázce kreslíme návrh zdarma.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ZÁCHRANA -->
+      <section id="renovation" class="section-green">
+        <div class="container">
+          <h2 class="section-title">Záchrana & Renovace</h2>
+          <p class="section-subtitle">Chirurgie pro vaše krovy</p>
+          
+          <div class="renovation-content">
+            <div class="renovation-text">
+              <p>Máte shnilý trám? Teče vám do starého přístřešku? Nemusíte hned bourat. Umíme dřevo zachránit tradičními metodami.</p>
+              <ul>
+                <li>Protézování trámů (výměna zhlaví)</li>
+                <li>Renovace stodol a chalup</li>
+                <li>Statické zajištění</li>
+              </ul>
+            </div>
+            <div class="renovation-visual">
+               <!-- Placeholder for specific joinery detail -->
+               <div class="placeholder-technical">Detail Plátování</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REFERENCE -->
+      <section id="references" class="container">
+        <h2 class="section-title">Proměny</h2>
+        
+        <div class="before-after-container">
+          <div class="ba-slider">
+            <div class="ba-image-after">
+              <span>PO</span>
+            </div>
+            <div class="ba-image-before">
+              <span>PŘED</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="ba-range" id="ba-slider-input">
+            <div class="ba-handle"></div>
+          </div>
+          <p class="ba-caption">Renovace krovu stodoly, Telč 2024</p>
+        </div>
+
+        <div class="reviews">
+          <blockquote>
+            "Kluci přijeli, po sobě uklidili, cena platila. Konečně řemeslníci, na které je spoleh."
+            <cite>— Jan Novák, Třebíč</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- CENÍK A PROCES -->
+      <section id="pricing" class="section-light">
+        <div class="container">
+          <h2 class="section-title">Ceny a Průběh</h2>
+          <div class="timeline">
+            <div class="step">1. Zavoláte / Pošlete fotku</div>
+            <div class="step">2. Zaměření zdarma</div>
+            <div class="step">3. Rozpočet</div>
+            <div class="step">4. Realizace</div>
+          </div>
+          <div class="pricing-box">
+             <p><strong>Pergoly:</strong> od 4,500 Kč/m²</p>
+             <p><strong>Opravy:</strong> Individuální nacenění dle stavu</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- KONTAKT -->
+      <section id="contact" class="section-dark">
+        <div class="container contact-wrapper">
+          <div class="contact-info">
+            <h2>Zavolejte nám</h2>
+            <a href="tel:+420123456789" class="phone-link">+420 123 456 789</a>
+            <p>Jihlava, Třebíč, Telč a okolí</p>
+            <p>info@tesarivysocina.cz</p>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <h3>Napište nám</h3>
+            <div class="form-group">
+              <label for="name">Jméno</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="type">Typ poptávky</label>
+              <select id="type" name="type">
+                <option value="new">Nová stavba</option>
+                <option value="repair">Oprava / Rekonstrukce</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="photo">Nahrát fotku (nepovinné)</label>
+              <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">Odeslat poptávku</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Tesařství Vysočina. Všechna práva vyhrazena.</p>
+        <p>IČO: 12345678</p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
