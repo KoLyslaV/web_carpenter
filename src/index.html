@@ -195,11 +195,20 @@
             <input type="tel" id="phone" name="phone" required>
           </div>
           <div class="form-group">
+            <label for="email">Email (nepovinné)</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
             <label for="type">Typ poptávky</label>
             <select id="type" name="type">
               <option value="new">Nová stavba</option>
               <option value="repair">Oprava / Rekonstrukce</option>
             </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Zpráva / Poznámka (nepovinné)</label>
+            <textarea id="message" name="message" rows="4"
+              placeholder="Např. rozměry, specifické požadavky..."></textarea>
           </div>
           <div class="form-group">
             <label for="photo">Nahrát fotku (nepovinné)</label>
