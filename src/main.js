@@ -56,10 +56,42 @@ document.addEventListener('DOMContentLoaded', () => {
     // Contact Form Handling (Demo)
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            alert('Děkujeme za vaši poptávku! Ozveme se vám co nejdříve.');
-            contactForm.reset();
+
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.textContent = 'Odesílám...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    alert('Děkujeme za vaši poptávku! Ozveme se vám co nejdříve.');
+                    contactForm.reset();
+                } else {
+                    const data = await response.json();
+                    if (Object.hasOwn(data, 'errors')) {
+                        alert(data["errors"].map(error => error["message"]).join(", "));
+                    } else {
+                        alert('Oops! Něco se pokazilo při odesílání formuláře.');
+                    }
+                }
+            } catch (error) {
+                alert('Oops! Něco se pokazilo při odesílání formuláře.');
+            } finally {
+                submitBtn.textContent = originalBtnText;
+                submitBtn.disabled = false;
+            }
         });
     }
 });
