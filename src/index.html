@@ -38,18 +38,36 @@
     {
       "@context": "https://schema.org",
       "@type": "GeneralContractor",
-      "name": "Tesařství Vysočina",
-      "url": "https://www.vyttes.com/",
-      "description": "Poctivé tesařské práce na Vysočině. Realizujeme nové střechy, pergoly, garážová stání a opravy krovů v Jihlavě, Třebíči, Havlíčkově Brodě, Pelhřimově a Žďáru nad Sázavou.",
+      "name": "Vyttes - Tesařství Vysočina",
+      "image": "https://www.vyttes.com/logo.png",
+      "@id": "https://www.vyttes.com",
+      "url": "https://www.vyttes.com",
       "telephone": "+420702637652",
       "email": "vytesvytes@gmail.com",
+      "priceRange": "Individuální",
+      "description": "Tesařské práce, nové střechy, pergoly a záchrana starých krovů. Působíme na celé Vysočině. Jsme Jarda, Štěpán a Ondra.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Olšany 18",
+        "addressLocality": "Olšany",
+        "postalCode": "588 56",
+        "addressCountry": "CZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "49.163353",
+        "longitude": "15.549282"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61566866579633"
+      ],
       "areaServed": [
         { "@type": "AdministrativeArea", "name": "Kraj Vysočina" },
         { "@type": "City", "name": "Jihlava" },
         { "@type": "City", "name": "Třebíč" },
         { "@type": "City", "name": "Havlíčkův Brod" },
-        { "@type": "City", "name": "Pelhřimov" },
         { "@type": "City", "name": "Žďár nad Sázavou" },
+        { "@type": "City", "name": "Pelhřimov" },
         { "@type": "City", "name": "Velké Meziříčí" },
         { "@type": "City", "name": "Humpolec" },
         { "@type": "City", "name": "Nové Město na Moravě" },
@@ -57,29 +75,23 @@
         { "@type": "City", "name": "Bystřice nad Pernštejnem" },
         { "@type": "City", "name": "Moravské Budějovice" },
         { "@type": "City", "name": "Světlá nad Sázavou" },
-        { "@type": "City", "name": "Třešť" },
-        { "@type": "City", "name": "Ledeč nad Sázavou" },
         { "@type": "City", "name": "Telč" },
         { "@type": "City", "name": "Polná" },
-        { "@type": "City", "name": "Pacov" },
-        { "@type": "City", "name": "Jaroměřice nad Rokytnou" },
-        { "@type": "City", "name": "Přibyslav" },
-        { "@type": "City", "name": "Jemnice" },
-        { "@type": "City", "name": "Brtnice" },
-        { "@type": "City", "name": "Žirovnice" },
-        { "@type": "City", "name": "Počátky" }
+        { "@type": "City", "name": "Třešť" },
+        { "@type": "City", "name": "Brtnice" }
       ],
-      "sameAs": [
-        "https://www.facebook.com/search/top?q=VyTes"
-      ],
-      "serviceType": [
-        "Nové střechy",
-        "Pergoly na míru",
-        "Renovace krovů",
-        "Tesařské konstrukce",
-        "Garážová stání"
-      ],
-      "priceRange": "Individuální"
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "07:00",
+        "closes": "18:00"
+      }
     }
   </script>
 </head>
@@ -87,7 +99,7 @@
 <body>
   <header id="main-header">
     <a href="/" class="logo-link">
-      <img src="/logo.png" alt="Tesařství Vysočina - VyTes logo" class="logo-img">
+      <img src="/logo.png" alt="Tesařství Vysočina - Vyttes logo" class="logo-img">
       <span class="logo-text">POCTIVÁ TESAŘINA</span>
     </a>
     <nav aria-label="Hlavní navigace">
@@ -288,6 +300,7 @@
         <div class="contact-info">
           <h2>Zavolejte nám</h2>
           <a href="tel:+420702637652" class="phone-link" aria-label="Zavolat na číslo 702 637 652">702 637 652</a>
+          <p style="margin-top: 0; margin-bottom: 1rem; font-weight: 500;">Po-Pá: 07:00 – 18:00 (na telefonu)</p>
           <p>Působíme převážně na Vysočině, po domluvě však realizujeme zakázky po celé České republice.</p>
           <div class="service-areas" style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;">
             <p><strong>Kde tesaříme:</strong> Jihlava, Třebíč, Havlíčkův Brod, Žďár nad Sázavou, Pelhřimov, Velké
@@ -297,8 +310,8 @@
           </div>
           <p><a href="mailto:vytesvytes@gmail.com"
               aria-label="Napsat email na vytesvytes@gmail.com">vytesvytes@gmail.com</a></p>
-          <p>Facebook: <a href="https://www.facebook.com/search/top?q=VyTes" target="_blank"
-              rel="noopener noreferrer">VyTes</a></p>
+          <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61566866579633" target="_blank"
+              rel="noopener noreferrer">Vyttes</a></p>
         </div>
 
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/mykpkyjv" method="POST">
@@ -344,7 +357,7 @@
 
       <p>&copy; 2024 Tesařství Vyttes. Všechna práva vyhrazena.</p>
       <p>IČO: 23044390</p>
-      <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">Fakturační adresa: Olšany 18, 588 56</p>
+      <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">Sídlo: Olšany 18, 588 56</p>
     </div>
   </footer>
   <script type="module" src="/main.js"></script>
